@@ -1,0 +1,37 @@
+# Python-specific ignores
+*.pyc
+__pycache__/
+
+
+# Virtual environment
+venv/
+env/
+
+
+# Dependency directories
+lib/
+lib64/
+dist/
+build/
+*.egg-info/
+site-packages/
+
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+
+# Environment variables
+.env
+
+
+# Log files and temporary files
+*.log
+*.tmp
+
+
+# System files
+.DS_Store
+Thumbs.db
