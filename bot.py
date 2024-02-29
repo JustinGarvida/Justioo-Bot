@@ -1,4 +1,3 @@
-from typing import Final
 import os
 from dotenv import load_dotenv
 import discord
@@ -54,11 +53,11 @@ async def on_ready() -> None:
 async def on_message(message: Message) -> None:
     if message.author == client.user:
         return
-    username: str = str(message.author)
+    username: str = str(message.author.name)
     user_message: str = str(message.content)
     channel: str = str(message.channel)
 
-    print(f'[{message.channel}] {message.username}: "{message.user_message}"')
+    print(f'[{channel}] {username}: "{user_message}"')
     await send_message(message, user_message)
 
 # Entry point
